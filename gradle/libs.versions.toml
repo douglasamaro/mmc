@@ -17,6 +17,8 @@ coroutines = "1.8.1"
 junit = "4.13.2"
 kotlin = "1.9.24"
 koin = "3.2.0"
+koin-compose = "1.0.4"
+navigation = "2.7.0-alpha03"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -33,9 +35,10 @@ androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-viewmodel", versio
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigation" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
-koin-test = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

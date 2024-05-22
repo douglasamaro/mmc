@@ -7,7 +7,11 @@ class CalculateIMCUseCase {
     fun execute(
         high: Double,
         weight: Double,
-    ) : Double {
-        return weight / high.pow(2)
+    ): Double {
+        return if (high < 1) {
+            0.0
+        } else {
+            weight / (high / 100).pow(2)
+        }
     }
 }

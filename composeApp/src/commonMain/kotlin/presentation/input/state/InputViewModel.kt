@@ -2,13 +2,13 @@ package presentation.input.state
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import domain.useCase.FormatInputIntoDataUseCase
+import domain.useCase.FormatInputDoubleDataUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class InputViewModel(
-    private val formatInputIntoDataUseCase: FormatInputIntoDataUseCase
+    private val formatInputDoubleDataUseCase: FormatInputDoubleDataUseCase
 ) : ViewModel() {
 
     private val _high = MutableStateFlow(0.0)
@@ -21,11 +21,11 @@ class InputViewModel(
         viewModelScope.launch {
             when (event) {
                 is InputUiEvents.UpdateHigh -> {
-                    val high = formatInputIntoDataUseCase.execute(event.high)
+                    val high = formatInputDoubleDataUseCase.execute(event.high)
                     _high.value = high
                 }
                 is InputUiEvents.UpdateWeight -> {
-                    val weight = formatInputIntoDataUseCase.execute(event.weight)
+                    val weight = formatInputDoubleDataUseCase.execute(event.weight)
                     _weight.value = weight
                 }
             }

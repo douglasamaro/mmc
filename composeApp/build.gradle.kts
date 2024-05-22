@@ -34,11 +34,14 @@ kotlin {
             implementation(libs.koin.android)
         }
         commonMain.dependencies {
+            implementation("androidx.activity:activity-compose") {
+                exclude(group = "androidx.lifecycle", module = "lifecycle-viewmodel-ktx")
+            }
+            implementation(libs.koin.compose)
+            implementation(libs.navigation.compose)
             implementation(libs.coroutines)
             implementation(libs.koin.core)
-            implementation(libs.koin.test)
             implementation(compose.runtime)
-            implementation(libs.androidx.lifecycle)
             implementation(compose.foundation)
             implementation(compose.material)
             implementation(compose.ui)

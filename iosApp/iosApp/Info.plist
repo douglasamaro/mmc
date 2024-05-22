@@ -33,18 +33,18 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>UISupportedInterfaceOrientations</key>
+	<key>UISupportedDoubleerfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIDoubleerfaceOrientationPortrait</string>
+		<string>UIDoubleerfaceOrientationLandscapeLeft</string>
+		<string>UIDoubleerfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
+	<key>UISupportedDoubleerfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIDoubleerfaceOrientationPortrait</string>
+		<string>UIDoubleerfaceOrientationPortraitUpsideDown</string>
+		<string>UIDoubleerfaceOrientationLandscapeLeft</string>
+		<string>UIDoubleerfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>
