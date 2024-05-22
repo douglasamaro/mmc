@@ -1,11 +1,13 @@
 package domain.useCase
 
+import kotlin.math.pow
+
 class CalculateIMCUseCase {
 
     fun execute(
         high: Double,
         weight: Double,
     ) : Double {
-        return value.toDouble()
+        return weight / high.pow(2)
     }
 }

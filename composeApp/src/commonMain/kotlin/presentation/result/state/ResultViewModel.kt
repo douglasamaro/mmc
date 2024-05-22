@@ -22,6 +22,7 @@ class ResultViewModel(
                         high = event.high,
                         weight = event.weight
                     )
+
                     _imc.value = imc
                 }
             }
