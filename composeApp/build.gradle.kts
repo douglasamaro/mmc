@@ -30,13 +30,15 @@ kotlin {
         
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
-            implementation(libs.androidx.activity.compose)
             implementation(libs.koin.android)
+
+            // ViewModel
+            implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation("androidx.activity:activity-compose") {
-                exclude(group = "androidx.lifecycle", module = "lifecycle-viewmodel-ktx")
-            }
+            // ViewModel
+            implementation(libs.lifecycle.viewmodel)
+
             implementation(libs.koin.compose)
             implementation(libs.navigation.compose)
             implementation(libs.coroutines)
